@@ -52,9 +52,8 @@ footer {
   background-color: white;
 }
 .QrCodeImage {
-  margin-top: 5px;
-  width: 100%;
-  height: auto;
+  margin-top: 15px;
+  width: 288px;
   object-fit: cover;
   border-radius: 10px;
 }
