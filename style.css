@@ -1,81 +1,80 @@
-body {
-    font-family: 'Outfit', sans-serif;
-    font-size: 15px;
-    color: hsl(218, 44%, 22%);
-    background-color: hsl(212, 45%, 89%);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-}
+:root {
+  --white: #ffffff;
+  --slate-900: #1f314f;
+  --slate-500: #68778d;
+  --slate-300: #d5e1ef;
 
-header {
-    background-color: hsl(216, 15%, 48%);
-    color: hsl(0, 0%, 100%);
-    padding: 20px;
-    text-align: center;
+  --primary-font: "Outfit", sans-serif;
+
+  --gap-small: 16px;
+  --gap-large: 24px;
+}
+body {
+  font-family: var(--primary-font);
+  font-size: 15px;
+  color: hsl(218, 44%, 22%);
+  background-color: var(--slate-300);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
 h2 {
-    font-weight: 700;
-    text-align: center;
+  text-align: center;
+  color: var(--slate-900);
 }
 
 p {
-    font-size: 15px;
-    font-weight: 400;
-    text-align: center;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  color: var(--slate-500);
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: hsl(212, 45%, 89%);
+  text-align: center;
+  padding: 20px;
+  background-color: hsl(212, 45%, 89%);
 }
-.QrCode{
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 320px;
-    height: 499px;
-    border-radius: 3%;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: white;
+.QrCode {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 320px;
+  height: 499px;
+  border-radius: 3%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
 }
-.QrCodeImage{
-    margin-top: 15px;
-    width: 288px;
-    height: 288px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 3%;
+.QrCodeImage {
+  margin-top: 5px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-
-
-.attribution { 
-    font-size: 11px; text-align: center;
- }
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
-
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 @media (max-width: 375px) {
-    body {
-        font-size: 14px; /* Mobil için daha küçük yazı boyutu */
-    }
+  body {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 1440px) {
-    body {
-        font-size: 16px; /* Büyük ekranlar için daha büyük yazı boyutu */
-    }
+  body {
+    font-size: 16px;
+  }
 }
